@@ -2,12 +2,14 @@ package com.security.sso.client.b;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 
 @SpringBootApplication
-public class SsoClientBApplication {
+@EnableOAuth2Sso
+public class App {
 
     public static void main(String[] args) {
-        SpringApplication.run(SsoClientBApplication.class, args);
+        SpringApplication.run(App.class, args);
     }
 
 }
